@@ -13,13 +13,13 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # 学习通账号密码
 user_info = {
-	'username': os.environ["17649852045"],
-	'password': os.environ["19990323ab"],
+	'username': os.environ["CHAOXING_USERNAME"],
+	'password': os.environ["CHAOXING_PASSWORD"],
 	'schoolid': os.environ["CHAOXING_SCHOOL"] # 学号登录才需要填写
 }
 
 # server酱
-server_chan_sckey = os.environ["SCU97158T207075b3d3a1dc586bb666e71ec6c7825eb64a481b31b"]  # 申请地址http://sc.ftqq.com/3.version
+server_chan_sckey = os.environ["CHAOXING_SERVER"]  # 申请地址http://sc.ftqq.com/3.version
 server_chan = {
 	'status': os.environ["CHAOXING_SERVEROR"] ,  # 如果关闭server酱功能，请改为False
 	'url': 'https://sc.ftqq.com/{}.send'.format(server_chan_sckey)
